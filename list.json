@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "remark": "vxiaov/free_proxies",
+    "site": "https://github.com/vxiaov/free_proxies",
+    "url": "https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml",
+    "enabled": true
+  },
+  {
+    "id": 3,
+    "remark": "Pawdroid/Free-servers",
+    "site": "https://github.com/Pawdroid/Free-servers",
+    "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "enabled": true
+  },
+  {
+    "id": 4,
+    "remark": "anaer/Sub-it is broken",
+    "site": "https://github.com/anaer/Sub",
+    "url": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
+    "enabled": false
+  },
+  {
+    "id": 6,
+    "remark": "aiboboxx/v2rayfree",
+    "site": "https://github.com/aiboboxx/v2rayfree",
+    "url": "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+    "enabled": true
+  },
+  {
+    "id": 7,
+    "remark": "HakurouKen/free-node",
+    "site": "https://github.com/HakurouKen/free-node",
+    "url": "https://raw.githubusercontent.com/HakurouKen/free-node/main/public",
+    "enabled": true
+  },
+  {
+    "id": 8,
+    "remark": "mahdibland/V2RayAggregator",
+    "site": "https://github.com/mahdibland/V2RayAggregator",
+    "url": "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.txt",
+    "enabled": true
+  },
+  {
+    "id": 17,
+    "remark": "nodefree.org",
+    "site": "https://nodefree.org/",
+    "url": "https://nodefree.org/dy/2024/10/20241018.txt",
+    "update": "Y/m/Y-m-d",
+    "enabled": false
+  },
+  {
+    "id": 19,
+    "remark": "v2rayshare.com",
+    "site": "https://v2rayshare.com/",
+    "url": "https://v2rayshare.com/wp-content/uploads/2024/10/20241018.txt",
+    "update": "Y/m/Y-m-d",
+    "enabled": false
+  },
+  {
+    "id": 20,
+    "remark": "freeclash.org/wp-content",
+    "site": "https://freeclash.org/",
+    "url": "https://freeclash.org/wp-content/uploads/2024/10/1018.txt",
+    "update": "Y/m/m-d",
+    "enabled": true
+  }
+]
