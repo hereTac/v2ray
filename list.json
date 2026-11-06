@@ -1,0 +1,76 @@
+[
+  {
+    "id": 0,
+    "remark": "vxiaov/free_proxies",
+    "site": "https://github.com/vxiaov/free_proxies",
+    "url": "https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml",
+    "enabled": false
+  },
+  {
+    "id": 1,
+    "remark": "Pawdroid/Free-servers too many nodes",
+    "site": "https://github.com/Pawdroid/Free-servers",
+    "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "enabled": false
+  },
+  {
+    "id": 2,
+    "remark": "anaer/Sub-it always timeout",
+    "site": "https://github.com/anaer/Sub",
+    "url": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
+    "enabled": false
+  },
+  {
+    "id": 3,
+    "remark": "aiboboxx/v2rayfree",
+    "site": "https://github.com/aiboboxx/v2rayfree",
+    "url": "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+    "enabled": false
+  },
+  {
+    "id": 4,
+    "remark": "HakurouKen/free-node",
+    "site": "https://github.com/HakurouKen/free-node",
+    "url": "https://raw.githubusercontent.com/HakurouKen/free-node/main/public",
+    "enabled": false
+  },
+  {
+    "id": 5,
+    "remark": "mahdibland/V2RayAggregator",
+    "site": "https://github.com/mahdibland/V2RayAggregator",
+    "url": "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.txt",
+    "enabled": false
+  },
+  {
+    "id": 10,
+    "remark": "nodefree.org",
+    "site": "https://nodefree.org/",
+    "url": "https://nodefree.githubrowcontent.com/2026/01/20260123.txt",
+    "update": "Y/m/Y-m-d",
+    "enabled": false
+  },
+  {
+    "id": 11,
+    "remark": "v2rayshare.com",
+    "site": "https://v2rayshare.com/",
+    "url": "https://v2rayshare.githubrowcontent.com/2026/01/20260123.txt",
+    "update": "Y/m/Y-m-d",
+    "enabled": false
+  },
+  {
+    "id": 12,
+    "remark": "freeclash.org/wp-content",
+    "site": "https://freeclash.org/",
+    "url": "https://freeclash.org/wp-content/uploads/2026/01/0131.txt",
+    "update": "Y/m/m-d",
+    "enabled": false
+  },
+  {
+    "id": 13,
+    "remark": "asdsadsddas123/freevpn",
+    "site": "https://github.com/asdsadsddas123/freevpn",
+    "url": "https://raw.githubusercontent.com/hereTac/v2ray/refs/heads/master/output_nodes.txt",
+    "update": "Y/m/m-d",
+    "enabled": true
+  }
+]
