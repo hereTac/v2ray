@@ -1,0 +1,73 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python application
+# Controls when the workflow will run
+
+on:
+  schedule:
+    # Executed every hour every day
+    # 表达式生成  https://crontab.guru/
+    - cron:  '0 1 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4.1.1
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: get the nodes
+      run: |
+        rm -f ./output_nodes.txt
+        python crawlnodes/main.py
+    - name: GitMerge
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin master
+        git add output_nodes.txt
+        
+        (git commit -m "Update output_nodes.txt $(date '+%Y-%m-%d %H:%M:%S')") || true
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
+    # - name: GitCommit
+    #   run: |                 
+    #     git pull origin master
+    #     git add output_nodes.txt
+    #     (git commit -m "update: $(date '+%Y-%m-%d %H:%M:%S') 更新链接") || true
+    # - name: GitPush
+    #   uses:  ad-m/github-push-action@master
+    #   with:
+    #     branch: master
+
+  update_branch:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: UpdateBranch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git pull origin master
+          git checkout --orphan latest_branch
+          git add -A
+          git commit -am "update: $(date '+%Y-%m-%d %H:%M:%S')"
+          git branch -D master
+          git branch -m master
+          git push -f origin master
